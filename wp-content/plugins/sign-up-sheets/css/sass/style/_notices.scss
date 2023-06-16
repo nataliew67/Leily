@@ -1,0 +1,123 @@
+.dls-sus {
+  &.error,
+  &.alert,
+  &.updated {
+    color: #000 !important;
+    display: block !important;
+    float: none;
+    margin: 1em auto;
+    padding: 5px 5px 5px 30px;
+    text-align: left !important;
+    width: auto;
+  }
+
+  &.updated {
+    background: #F0FFDF url('../images/icon-check.gif') no-repeat scroll 8px .5em;
+  }
+
+  &.alert {
+    background: #fff7e2 url('../images/icon-alert.png') no-repeat scroll 8px .5em;
+  }
+
+  &.error {
+    background: #FFF2CF url('../images/icon-alert.png') no-repeat scroll 8px .5em;
+  }
+}
+
+.dlsntc-notice {
+  display: block;
+  padding: 0;
+  background-color: #f2f2f2;
+  color: #000;
+  margin: 1em 0;
+
+  svg {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: .4em;
+
+    path {
+      fill: #000;
+    }
+  }
+
+  p,
+  .dlsntc-message {
+    border-bottom: 1px solid #fff;
+    margin: 0;
+    padding: .4em .8em;
+  }
+
+  .fdsus-receipt {
+    border: 1px dashed;
+    padding: 1em;
+    margin: .4em 0;
+
+    .fdsus-receipt-title {
+      margin-top: 0;
+    }
+
+    .fdsus-receipt-signed-up-date {
+      text-align: center;
+      display: block;
+      margin-top: 1em;
+      font-size: .9em;
+    }
+
+    dl {
+      margin: 0;
+    }
+
+    dd + dt,
+    dt + dd {
+      margin-top: 0;
+      margin-left: 0;
+    }
+
+    dt {
+      float: left;
+      clear: left;
+      margin-right: .6em;
+
+      &:after {
+        content: ':';
+      }
+    }
+  }
+}
+
+.dlsntc-error {
+  background-color: #FFBABA;
+  color: #470004;
+
+  svg path {
+    fill: #470004;
+  }
+}
+
+.dlsntc-warn {
+  background-color: #FEEFB3;
+  color: #523100;
+
+  svg path {
+    fill: #523100;
+  }
+}
+
+.dlsntc-info {
+  background-color: #BDE5F8;
+  color: #002E57;
+
+  svg path {
+    fill: #223B07;
+  }
+}
+
+.dlsntc-success {
+  background-color: #DFF2C0;
+  color: #223B07;
+
+  svg path {
+    fill: #223B07;
+  }
+}

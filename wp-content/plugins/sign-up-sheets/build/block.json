@@ -1,0 +1,34 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 2,
+    "name": "sign-up-sheets/sheet",
+    "version": "2.2.1",
+    "title": "Sign-up Sheets",
+    "category": "widgets",
+    "icon": "clipboard",
+    "description": "Sign-up Sheets listing or individual sheet",
+    "supports": {
+        "html": false
+    },
+    "textdomain": "fdsus",
+    "editorScript": "file:./index.js",
+    "editorStyle": "file:./index.css",
+    "style": "file:./style-index.css",
+    "attributes": {
+        "id": {
+            "type": "string"
+        },
+        "listTitle": {
+            "type": "string"
+        },
+        "categorySlug": {
+            "type": "string"
+        },
+        "listTitleIsCategory": {
+            "type": "string"
+        }
+    },
+    "example": {
+        "attributes": {}
+    }
+}
